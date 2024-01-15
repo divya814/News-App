@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./images/logo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="state" onclick="onNavItemClick('state')">State</li>
+                    <li class="hover-link nav-item" id="world" onclick="onNavItemClick('world')">World</li>
+                    <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="national" onclick="onNavItemClick('national')">national</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">
+                        Entertainment</li>
+                    <li class="hover-link nav-item" id="career" onclick="onNavItemClick('career')">Career</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="box">
+                    <div class="img">
+                        <img src="../images/hero1.jpg" alt="">
+                    </div>
+                    <div class="text"><span class="category">Featured</span>
+                        <h1 class="titleBg">Google To Boost Android Security In Few Days</h1>
+
+                        <div class="author flex">
+                            <span>by Divya</span>
+                            <span>5 Jan - 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img"><img src="../images/hero2.jpg" alt=""></div>
+                    <div class="text"><span class="category">Food</span>
+                        <h1 class="titleBg">More than billion tons of food getting wasted</h1>
+
+                        <div class="author flex"><span>by Divya</span><span>12 Jan - 2024</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img"><img src="../images/hero3.jpg" alt=""></div>
+                    <div class="text"><span class="category">Fashion</span>
+                        <h1 class="titleBg">No escaping new high tech speed cameras</h1>
+
+                        <div class="author flex"><span>by Divya</span><span>2 Jan - 2024</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img"><img src="../images/hero4.jpg" alt=""></div>
+                    <div class="text"><span class="category">Technology</span>
+                        <h1 class="titleBg">AI is growing extensively</h1>
+
+                        <div class="author flex"><span>by Divya</span><span>8 Jan - 2024</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h4 id="news-title"></h4>
+                <h5 class="news-source" id="news-source"></h5>
+                <p class="news-desc" id="news-desc"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
