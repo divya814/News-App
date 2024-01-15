@@ -51,7 +51,6 @@ nav {
     z-index: 99;
     left: 0;
     right: 0;
-    height:40px;
 }
 
 .main-nav {
@@ -286,4 +285,16 @@ main {
         width: 90%;
         margin: auto;
     }
-  }
+    .main-nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .news-input{
+      width: 150px;
+    }
+    .company-logo img {
+      width: 100px;
+    }
+    main {
+      margin-top: 54px;
+    }
